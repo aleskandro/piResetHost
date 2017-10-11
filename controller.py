@@ -24,7 +24,7 @@ class RPiController:
 		self.powerOn()
 
 	def check(self):
-		response = os.system("ping -c 1 10.32.32.1")
+		response = os.system("ping -c 1 10.32.32.1 > /dev/null")
 		return response == 0
 
 	def upOrReset(self):
