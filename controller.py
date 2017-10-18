@@ -33,7 +33,7 @@ class RPiController:
 
 	def _checker(self):
 		while(1):
-			time.sleep(10)
+			time.sleep(100)
 			self.upOrReset()
 	
 	def checker(self):
